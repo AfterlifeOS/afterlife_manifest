@@ -11,6 +11,7 @@
   <project path="packages/apps/AfterLab" name="AfterlifeOS/packages_apps_AfterLab" />
   <project path="packages/apps/ExactCalculator" name="AfterlifeOS/packages_apps_ExactCalculator" />
   <project path="packages/apps/GameSpace" name="AfterlifeOS/packages_apps_GameSpace" />
+  <project path="packages/apps/LMOFreeform" name="AfterlifeOS/packages_apps_LMOFreeform" />
   <project path="packages/apps/ParanoidSense" name="AfterlifeOS/packages_apps_ParanoidSense" />
   <project path="packages/apps/OmniStyle" name="AfterlifeOS/packages_apps_OmniStyle" />
   <!--<project path="packages/apps/Updater" name="AfterlifeOS/packages_apps_Updater" remote="gitea" />-->
