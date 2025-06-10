@@ -1,67 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- AfterLife additions -->
-  <project path="device/afterlife/ota" name="AfterlifeOS/device_afterlife_ota" />
-  <project path="device/afterlife/sepolicy" name="AfterlifeOS/device_afterlife_sepolicy" />
-  <project path="external/FadingEdgeLayout" name="AfterlifeOS/external_FadingEdgeLayout" />
-  <project path="hardware/afterlife/dolby" name="AfterlifeOS/hardware_afterlife_dolby" />
-  <project path="hardware/afterlife/interfaces" name="AfterlifeOS/hardware_afterlife_interfaces" />
-  <project path="hardware/xiaomi" name="AfterlifeOS/hardware_xiaomi" revision="14" />
+  <project path="hardware/lineage/compat" name="AfterlifeOS/hardware_afterlife_compat" />
+  <project path="hardware/lineage/interfaces" name="AfterlifeOS/hardware_afterlife_interfaces" />
   <project path="manifest" name="AfterlifeOS/afterlife_manifest" />
-  <project path="packages/apps/AfterLab" name="AfterlifeOS/packages_apps_AfterLab" />
-  <project path="packages/apps/ExactCalculator" name="AfterlifeOS/packages_apps_ExactCalculator" />
+  <project path="packages/apps/BtHelper" name="AfterlifeOS/packages_apps_BtHelper" />
+  <project path="packages/apps/ColumbusService" name="AfterlifeOS/packages_apps_ColumbusService" />
+  <project path="packages/apps/FaceUnlock" name="AfterlifeOS/packages_apps_FaceUnlock" remote="gitea" />
   <project path="packages/apps/GameSpace" name="AfterlifeOS/packages_apps_GameSpace" />
-  <project path="packages/apps/LMOFreeform" name="AfterlifeOS/packages_apps_LMOFreeform" />
-  <project path="packages/apps/ParanoidSense" name="AfterlifeOS/packages_apps_ParanoidSense" />
-  <project path="packages/apps/OmniStyle" name="AfterlifeOS/packages_apps_OmniStyle" />
-  <!--<project path="packages/apps/Updater" name="AfterlifeOS/packages_apps_Updater" remote="gitea" />-->
-  <project path="packages/overlays/Themes" name="AfterlifeOS/packages_overlays_Themes" />
-  <project path="packages/services/OmnuJaws" name="AfterlifeOS/packages_services_OmniJaws" />
-  <project path="prebuilts/exthm-sdk" name="AfterlifeOS/prebuilts_exthmui-sdk" remote="gitea" />
+  <project path="packages/apps/TouchGestures" name="AfterlifeOS/packages_apps_TouchGestures" />
+  <project path="prebuilts/afterlife-sdk" name="AfterlifeOS/prebuilts_afterlife-sdk" />
   <project path="vendor/afterlife" name="AfterlifeOS/vendor_afterlife" />
   <project path="vendor/afterlife/signed" name="AfterlifeOS/vendor_signed" />
-  <project path="vendor/afterlife-ui" name="AfterlifeOS/vendor_AfterUI" />
-  <project path="vendor/dolby/afterlife" name="AfterlifeOS/vendor_dolby_afterlife" />
-  <project path="vendor/gms" name="AfterlifeOS/vendor_gms" remote="gitea" clone-depth="1" revision="14" />
-  <project path="vendor/prebuilts/LawnIcons" name="AfterlifeOS/vendor_prebuilts_LawnIcons" />
+  <project path="vendor/certification" name="AfterlifeOS/vendor_certification" />
+  <project path="vendor/extras" name="AfterLifeOS/vendor_extras" />
+  <project path="vendor/gms" name="AfterlifeOS/vendor_gms" remote="gitea" clone-depth="1" revision="16" />
   <project path="vendor/support" name="AfterlifeOS/vendor_support" />
 
+  <!-- Legacy AOSP additions -->
+  
   <!-- CodeLinaro additions -->
-  <project path="device/qcom/sepolicy" name="AfterlifeOS/device_qcom_sepolicy" groups="qcom,qssi" />
-  <project path="device/qcom/sepolicy-legacy-um" name="AfterlifeOS/device_qcom_sepolicy" groups="qcom,sdm660" revision="14-legacy-um" />
-  <project path="device/qcom/sepolicy_vndr/legacy-um" name="AfterlifeOS/device_qcom_sepolicy_vndr" groups="qcom,lahaina" revision="14-legacy-um" />
-  <project path="device/qcom/sepolicy_vndr/sm8450" name="AfterlifeOS/device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="14-caf-sm8450" />
-  <project path="device/qcom/sepolicy_vndr/sm8550" name="AfterlifeOS/device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" revision="14-caf-sm8550" />
+  <project path="device/lineage/sepolicy" name="AfterlifeOS/device_afterlife_sepolicy" />
+  <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" groups="qcom,qssi" revision="lineage-23.0" />
+  <project path="device/qcom/sepolicy-legacy-um" name="LineageOS/android_device_qcom_sepolicy" groups="qcom,sdm660" revision="lineage-23.0-legacy-um" />
   <project path="hardware/qcom-caf/common" name="AfterlifeOS/hardware_qcom-caf_common" groups="qcom">
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
     <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" />
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
-    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450/Android.mk" />
-    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
-    <!-- add guards for Pixel kernel modules -->
-    <linkfile src="os_pickup.bp" dest="kernel/google/gs201/private/google-modules/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
   </project>
-  <project path="hardware/qcom-caf/wlan" name="AfterlifeOS/hardware_qcom_wlan" groups="qcom,kailua-vendor" revision="14-caf" />
-  <project path="vendor/qcom/opensource/vibrator" name="AfterlifeOS/vendor_qcom_opensource_vibrator" groups="qcom,kailua-vendor" />
+  <project path="hardware/qcom-caf/sm8350/display" name="AfterlifeOS/hardware_qcom_display" groups="qcom" revision="16-caf-sm8350" />
+  <project path="hardware/qcom-caf/sm8650/display" name="AfterlifeOS/hardware_qcom_display" groups="qcom" revision="16-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8750/display/hal" name="AfterlifeOS/hardware_qcom_display" groups="qcom" revision="16-caf-sm8750" />
+  <project path="vendor/qcom/opensource/interfaces" name="AfterlifeOS/vendor_qcom_opensource_interfaces" groups="qcom,qssi" />
+  <project path="vendor/qcom/opensource/vibrator" name="AfterlifeOS/vendor_qcom_opensource_vibrator" groups="qcom,pakala-vendor" />
 </manifest>
