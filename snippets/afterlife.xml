@@ -8,6 +8,7 @@
   <project path="packages/apps/ColumbusService" name="AfterlifeOS/packages_apps_ColumbusService" />
   <project path="packages/apps/FaceUnlock" name="AfterlifeOS/packages_apps_FaceUnlock" remote="gitea" />
   <project path="packages/apps/GameSpace" name="AfterlifeOS/packages_apps_GameSpace" />
+  <project path="packages/apps/LMOFreeform" name="AfterlifeOS/packages_apps_LMOFreeform" />
   <project path="packages/apps/TouchGestures" name="AfterlifeOS/packages_apps_TouchGestures" />
   <project path="prebuilts/afterlife-sdk" name="AfterlifeOS/prebuilts_afterlife-sdk" />
   <project path="vendor/afterlife" name="AfterlifeOS/vendor_afterlife" />
