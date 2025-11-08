@@ -10,6 +10,7 @@
   <project path="packages/apps/GameSpace" name="AfterlifeOS/packages_apps_GameSpace" />
   <project path="packages/apps/LMOFreeform" name="AfterlifeOS/packages_apps_LMOFreeform" />
   <project path="packages/apps/TouchGestures" name="AfterlifeOS/packages_apps_TouchGestures" />
+  <project path="packages/apps/Updater" name="AfterlifeOS/packages_apps_Updater" />
   <project path="prebuilts/afterlife-sdk" name="AfterlifeOS/prebuilts_afterlife-sdk" />
   <project path="vendor/afterlife" name="AfterlifeOS/vendor_afterlife" />
   <project path="vendor/afterlife/signed" name="AfterlifeOS/vendor_signed" />
