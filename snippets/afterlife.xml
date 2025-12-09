@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- AfterLife additions -->
+  <project path="device/afterlife/ota" name="AfterlifeOS/device_afterlife_ota" />
   <project path="hardware/lineage/compat" name="AfterlifeOS/hardware_afterlife_compat" />
   <project path="hardware/lineage/interfaces" name="AfterlifeOS/hardware_afterlife_interfaces" />
   <project path="manifest" name="AfterlifeOS/afterlife_manifest" />
