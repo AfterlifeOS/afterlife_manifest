@@ -16,7 +16,7 @@
   <project path="vendor/afterlife/signed" name="AfterlifeOS/vendor_signed" />
   <project path="vendor/certification" name="AfterlifeOS/vendor_certification" />
   <project path="vendor/extras" name="AfterLifeOS/vendor_extras" />
-  <project path="vendor/gms" name="AfterlifeOS/vendor_gms" remote="gitea" clone-depth="1" revision="16" />
+  <project path="vendor/gms" name="AfterlifeOS/vendor_gms" remote="gitlab" clone-depth="1" />
   <project path="vendor/support" name="AfterlifeOS/vendor_support" />
 
   <!-- Legacy AOSP additions -->
