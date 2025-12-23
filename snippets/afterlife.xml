@@ -7,7 +7,7 @@
   <project path="manifest" name="AfterlifeOS/afterlife_manifest" />
   <project path="packages/apps/BtHelper" name="AfterlifeOS/packages_apps_BtHelper" />
   <project path="packages/apps/ColumbusService" name="AfterlifeOS/packages_apps_ColumbusService" />
-  <project path="packages/apps/FaceUnlock" name="AfterlifeOS/packages_apps_FaceUnlock" remote="gitea" />
+  <project path="packages/apps/FaceUnlock" name="AfterlifeOS/packages_apps_FaceUnlock" remote="gitlab" />
   <project path="packages/apps/GameSpace" name="AfterlifeOS/packages_apps_GameSpace" />
   <project path="packages/apps/LMOFreeform" name="AfterlifeOS/packages_apps_LMOFreeform" />
   <project path="packages/apps/TouchGestures" name="AfterlifeOS/packages_apps_TouchGestures" />
