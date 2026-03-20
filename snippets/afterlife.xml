@@ -13,6 +13,12 @@
            sync-j="4"
            revision="16.2" />
 
+           <remote  name="wg"
+           fetch="https://github.com/afl-Workground"
+           sync-c="true"
+           sync-j="4"
+           revision="wip" />
+
   <!-- art -->
   <project path="art" name="art" groups="pdk" remote="afterlife" />
 
@@ -46,7 +52,7 @@
 
   <!-- frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="afterlife" />
-  <project path="frameworks/base" name="afterlife_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="afterlife" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="wg" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="afterlife" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="afterlife" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk,sysui-studio" remote="afterlife" />
@@ -77,17 +83,18 @@
   </project>
 
   <!-- manifest -->
-  <project path="manifest" name="afterlife_manifest" remote="afterlife" />
+  <project path="manifest" name="manifest" remote="wg" />
 
   <!-- packages -->
   <project path="packages/apps/AfterHome" name="packages_apps_AfterHome" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="afterlife" />
-  <project path="packages/apps/AfterLabs" name="packages_apps_AfterLabs" remote="afterlife" />
+  <project path="packages/apps/AfterLabs" name="packages_apps_AfterLabs" remote="wg" />
   <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="gitlab" revision="16.2" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" groups="pdk-fs" remote="afterlife" />
-  <project path="packages/apps/Settings" name="afterlife_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="afterlife" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="wg" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs,sysui-studio" remote="afterlife" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="afterlife" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="afterlife" />
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" groups="pdk-fs" remote="afterlife" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="afterlife" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="afterlife" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="afterlife" />
@@ -106,7 +113,7 @@
   <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="afterlife" />
 
   <!-- vendor -->
-  <project path="vendor/afterlife" name="vendor_afterlife" remote="afterlife" />
+  <project path="vendor/afterlife" name="vendor_afterlife" remote="wg" />
   <project path="vendor/afterlife/signed" name="vendor_signed" remote="afterlife" />
   <project path="vendor/certification" name="vendor_certification" remote="afterlife" />
   <project path="vendor/extras" name="vendor_extras" remote="afterlife" />
